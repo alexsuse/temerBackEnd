@@ -1,7 +1,13 @@
+"""Checks if Michel Temer is president of Brazil.
+
+Simple library that fetches the english wikipedia page 
+for Brazil, parses the html and looks in the infobox to
+check if michel temer is the president of Brazil. This
+should give us reasonable latency to detect changes as they happen.
+"""
 from bs4 import BeautifulSoup
 import requests
 
-PT_BR_wikipedia_page = "https://pt.wikipedia.org/wiki/Brasil"
 EN_BR_wikipedia_page = "https://en.wikipedia.org/wiki/Brazil"
 
 def getEnWikiPresident():
