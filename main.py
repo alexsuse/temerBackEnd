@@ -13,8 +13,8 @@ def isTemerPresident():
     """Returns if Michel Temer is president of Brazil"""
     president = president_fetcher.getEnWikiPresident()
     if "Michel" not in president and "Temer" not in president:
-        return "No!"
-    return 'Yes :('
+        return "Fora Temer!!"
+    return 'Sim :('
 
 
 if __name__ == '__main__':
